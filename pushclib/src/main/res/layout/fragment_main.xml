@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:id="@+id/linearLayout1">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sender Id : Example: 489986546123"
+            android:layout_weight="1"
+            android:id="@+id/txt_sender_id"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:inputType="number"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Serverbase Url : Example: www.myserver.com/pushroot"
+            android:id="@+id/txt_site_base_url"
+            android:layout_weight="1"
+            android:layout_below="@+id/btn_register"
+            android:layout_centerHorizontal="true"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:id="@+id/linearLayout">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_weight="1"
+            android:id="@+id/btn_register"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unregister"
+            android:id="@+id/btn_unregister"
+            android:layout_weight="1"
+            android:layout_below="@+id/btn_register"
+            android:layout_centerHorizontal="true"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:gravity="center"
+        android:id="@+id/status"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="326dp"
+        android:text="Updates will appear here. Click the options above"
+        android:id="@+id/tvstatus"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        />
+
+</LinearLayout>
