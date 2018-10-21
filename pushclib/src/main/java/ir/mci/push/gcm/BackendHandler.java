@@ -151,7 +151,7 @@ public class BackendHandler {
                 obj.put(GCMConstants.BACKEND_KEY_NAME, getDeviceName());
                 obj.put(GCMConstants.BACKEND_KEY_EMAIL, "Android V "+android.os.Build.VERSION.RELEASE);
                 obj.put(GCMConstants.BACKEND_KEY_PACKAGENAME, mContext.getPackageName());
-                obj.put(GCMConstants.BACKEND_KEY_USERKEY, LocalSharedPrefManager.loadSenderIdFromPrefs(mContext));
+                obj.put(GCMConstants.BACKEND_KEY_USERKEY, LocalSharedPrefManager.loadUserKey(mContext));
 
                 HttpParams httpParams = new BasicHttpParams();
                 HttpConnectionParams.setConnectionTimeout(httpParams, TIMEOUT_MILLISEC);
